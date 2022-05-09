@@ -1,0 +1,12 @@
+function [full_band] = butt_bandpass(y, Fs, Fmin, Fmax, orden)
+
+[b,a] = butter(orden/2,[Fmin,Fmax]/(Fs/2),'bandpass');
+full_band = filter(b,a,y);
+
+% [A,B,C,D] = butter(orden,[Fmin Fmax]/(Fs/2));
+% d = designfilt('bandpassiir','FilterOrder',orden*2, ...
+%     'HalfPowerFrequency1',Fmin,'HalfPowerFrequency2',Fmax, ...
+%     'SampleRate',Fs);
+% sos = ss2sos(A,B,C,D);
+% fvt = fvtool(sos,d,'Fs',Fs);
+% legend(fvt,'butter','designfilt')
