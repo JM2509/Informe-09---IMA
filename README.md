@@ -6,3 +6,5 @@ TR Calculator 2.0; el código cuenta con los siguientes bloques de cálculo:
 4) Ejecución del total de las partes por medio de funciones @handles en MATLAB (procesamiento.m)
 5) Todos deben contenterse en la misma carpeta y designarse como path en MATLAB además del archivo .fig correspondiente a la GUI. 
 6) El export de los resultados a la planilla de Excel se crea en la misma carpeta donde se guarde el código.
+
+Para ver las líneas de código, éstas fueron cargadas por separado en el repositorio. Para correr el código, se debe descargar y descomprimir el archivo .rar
